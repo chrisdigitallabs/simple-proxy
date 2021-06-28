@@ -15,13 +15,13 @@ app.get('/info', (req, res, next) => {
     res.send('This is a proxy service which proxies to Billing and Account APIs.');
  });
  // Authorization
-app.use('', (req, res, next) => {
-    if (req.headers.authorization) {
-        next();
-    } else {
-        res.sendStatus(403);
-    }
- });
+// app.use('', (req, res, next) => {
+//     if (req.headers.authorization) {
+//         next();
+//     } else {
+//         res.sendStatus(403);
+//     }
+//  });
 
  // Proxy endpoints
 app.use('/proxy', createProxyMiddleware({
