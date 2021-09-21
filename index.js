@@ -7,7 +7,7 @@ const app = express();
 // Configuration
 const PORT = 3000;
 const HOST = "localhost";
-const API_SERVICE_URL = "https://reviti-int-02.underwriteme.co.uk/api";
+const API_SERVICE_URL = "https://reviti-int-01.underwriteme.co.uk/api";
 // Logging
 app.use(morgan('dev'));
 // Info GET endpoint
